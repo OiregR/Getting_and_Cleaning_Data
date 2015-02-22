@@ -1,16 +1,18 @@
 
 
-Codebook
+#Codebook
 
 This document describes the variables of the output data set and summaries used to calculate the values, along with units and any other relevant information.
 
 The first section summarizes relevant parts from the input data codebook. The next section describes the output variables with their units. The last section describes the transformations used to calculate the output values.
-Input Data
+
+###Input Data
 
 The original data set contains a codebook that describes the data set. In this section I repeat the parts of the codebook relevant to the generated data set.
 
 The input data contains data recorded from the accelerometer and the gyroscope of a smartphone while the person who carried the smartphone was performing one of the following six activities: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING.
-Input Data Variables
+
+###Input Data Variables
 
 From the raw measurements, several other values were derived. The input dataset contains data for the following variables:
 Variable 	source 	domain
@@ -42,12 +44,14 @@ The original sensor data was recorded at a rate of 50 Hz. The data was grouped i
     and many others.
 
 In total, each input record contains 651 features.
-Input Data Units
+
+###Input Data Units
 
 The accelerometer data is measured in standard gravity units 'g'. The gyroscope data is measured in radians/second.
 
 The input features are normalized and bounded within the interval [-1,1]. During normalization the units have been divided by themselves so units have been cancelled.
-Structure of the input data
+
+###Structure of the input data
 
 The input data is split into two subsets: a training set and a test set. Each subsets consists of three files:
 
@@ -60,7 +64,8 @@ The names of the features are listed in the file features.txt.
 Additionally, the input contains the file activity_labels.txt which links the class labels with their activity name.
 
 The input data set also contains the raw measurement data that was used to compute the features. This raw data is not beeing used in this project.
-Output Variables
+
+###Output Variables
 
 The following table shows a table with all variables in the output file. The first column in the table shows the column number of the variable, the second column shows the variable name and column three shows the source variable used to compute the value of the variable.
 Colmun 	Variable 	source variable
@@ -145,7 +150,7 @@ The source variables consist of the following parts:
     The part after the dash describes the function that was used to compute the feature mean (Mean) or std (Standarddeviation)
     In case of three axial measurements, the last part of the variable defines the axis (X, Y or Z)
 
-Variable Units
+###Variable Units
 
     subjectid: identifier of an observed volunteer within an age bracket of 19-48 years
         Data type: Numeric
@@ -157,12 +162,12 @@ Variable Units
         Data type: The feature means have the same units as their input data. Due to the normalization they do not have units attached see Input Data Units
         Value range: [-1, 1]
 
-Additional notes
+###Additional notes
 
     Some input variable names contain the string 'BodyBody'. I considered this to be a typo and transformed it to the string 'Body'.
     The original input data contained duplicated variable names. This does not affect our script since the features with duplicated names are not selected as source for the output data.
 
-Transformations
+###Transformations
 
 To compute the mean values for the features, the input data was grouped by column 1 and column 2. Afterwards the mean for each feature variable per group was computed.
 
