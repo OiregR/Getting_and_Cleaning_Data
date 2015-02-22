@@ -16,16 +16,17 @@ The input data contains data recorded from the accelerometer and the gyroscope o
 
 From the raw measurements, several other values were derived. The input dataset contains data for the following variables:
 Variable 	source 	domain
-tBodyAcc-XYZ 	accelerometer 	time
-tGravityAcc-XYZ 	accelerometer 	time
-tBodyAccJerk-XYZ 	accelerometer 	time
-tBodyAccMag 	accelerometer 	time
-tGravityAccMag 	accelerometer 	time
-tBodyAccJerkMag 	accelerometer 	frequency
-fBodyAcc-XYZ 	accelerometer 	frequency
-fBodyAccJerk-XYZ 	accelerometer 	frequency
-fBodyAccMag 	accelerometer 	frequency
-fBodyAccJerkMag 	accelerometer 	frequency
+
+tBodyAcc-XYZ 	    accelerometer 	    time    
+tGravityAcc-XYZ 	accelerometer 	    time
+tBodyAccJerk-XYZ 	accelerometer 	    time
+tBodyAccMag     	accelerometer   	time
+tGravityAccMag 	    accelerometer   	time
+tBodyAccJerkMag 	accelerometer   	frequency
+fBodyAcc-XYZ 	    accelerometer   	frequency
+fBodyAccJerk-XYZ 	accelerometer   	frequency
+fBodyAccMag     	accelerometer   	frequency
+fBodyAccJerkMag 	accelerometer   	frequency
 tBodyGyro-XYZ 	gyroscope 	time
 tBodyGyroJerk-XYZ 	gyroscope 	time
 tBodyGyroMag 	gyroscope 	time
