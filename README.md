@@ -31,7 +31,7 @@ Submit the following:
   - From the data set in step 4, creates a second, independent tidy data set with the average of each variable for        each   activity and each subject.
 
 
-Explanation of the script
+###Explanation of the script
 
 - Download the file and unzip the file in the UCI HAR Dataset folder in the working directory.
 - Check the files inside the UCI HAR folder.
